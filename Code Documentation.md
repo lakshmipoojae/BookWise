@@ -26,4 +26,14 @@ The `script.css` file contains JavaScript code that handles the dynamic behavior
 
 The script also includes event listeners for logout functionality. When the user clicks the logout button, the script clears the logged-in user from session storage and redirects the user back to the login page (`login.html`).
 
+## To access the code
+
+#### username:admin
+
+#### password:password
+
+
+
+
+
 In summary, the BookWise Library Management System consists of HTML, CSS, and JavaScript code across multiple files. The `login.html` file handles the login page, `style2.css` and `script2.css` contain styles and JavaScript for the login functionality, `index.html` and `style.css` define the structure and styles for the homepage, and `script.css` handles the dynamic behavior of the homepage, including filtering, pagination, and lending functionality. By combining these files, the BookWise system provides a user-friendly interface for managing and browsing a collection of books.
