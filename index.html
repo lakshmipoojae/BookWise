@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .header {
+    display: flex;
+    justify-content: space-between;
+    padding:25px;
+    background-color: #FFFFFF;
+    color: #333333;
+    
+  }
+
+  .logout-button {
+    margin-left: 10px;
+  }</style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <h1>BookWise</h1>
+      <div class="user-section">
+        <span id="userWelcome"></span>
+        <button id="logoutButton" class="logout-button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="filters">
+    <input type="text" id="titleFilter" placeholder="Title">
+    <input type="text" id="authorFilter" placeholder="Author">
+    <input type="text" id="subjectFilter" placeholder="Subject">
+    <input type="text" id="dateFilter" placeholder="Publish Date">
+    <button id="filterButton">Filter</button>
+  </div>
+  <div id="bookContainer">
+    <div id="bookList"></div>
+    <div id="scrollLeft" class="scroll-arrow"><</div>
+    <div id="scrollRight" class="scroll-arrow">></div>
+
+    
+  </div>
+  <div id="lentBooksContainer">
+    <h2>Lent Books</h2>
+    <div id="lentBooksListContainer" >
+      <ul id="lentBooksList"></ul>
+    </div>
+    <button id="checkoutButton">Proceed to Checkout</button>
+  </div>
+  
+  
+  <div id="pagination"></div>  
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p> The Library Management System is a comprehensive software solution designed to simplify and streamline library operations. Our system provides librarians and library staff with powerful tools to manage various aspects of library resources, patrons, and administrative tasks.
+          </p>
+          <p>
+            With our user-friendly interface and robust features, libraries can efficiently handle tasks such as cataloging, circulation, reservations, and more. Our goal is to enhance the library experience for both staff and patrons, promoting easy access to information and seamless operations.
+          </p>
+          <h2>Contact Us</h2>
+          <p>
+            We would love to hear from you! If you have any questions or feedback regarding our Library Management System, please feel free to reach out to us using the contact details below:
+          </p>
+          <ul class="contact-details">
+            <li><i class="fa fa-envelope"></i> Email: info@librarysystem.com</li>
+            <li><i class="fa fa-phone"></i> Phone: +99 (123) 456-7890</li>
+            <li><i class="fa fa-map-marker"></i> Address: 123 Library Street, City, Country</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>For Further Queries</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <p class="text-center" ;style="center" ;>&copy; Website created by <a href="https://www.webmaddy.com" target="_blank">Lakshmipooja</a></p>
+  </footer>
+
+ 
+  
+  
+</body>
+</html>
